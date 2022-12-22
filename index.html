@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador y Desencriptador de texto</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="logo">
+        <img src="images/Logo.png" alt="logo" />
+      </div>
+
+      <div class="contenedor">
+        <div class="fuente">
+          <textarea
+            id="texto"
+            placeholder="Ingrese el texto aquí"
+            autofocus="autofocus"
+          ></textarea>
+          <div class="aviso">
+            <iconify-icon icon="bi:exclamation-circle-fill"></iconify-icon>
+            <p class="aviso-texto">Solo letras minúsculas y sin acentos</p>
+          </div>
+          <div class="botones">
+            <button class="btn botones-encriptar" onclick="encriptar()">
+              Encriptar
+            </button>
+            <button class="btn botones-desencriptar" onclick="desencriptar()">
+              Desencriptar
+            </button>
+          </div>
+        </div>
+
+        <div class="resultado">
+          <div class="resultado-texto">
+            <img id="muneco" src="images/Muñeco.png" />
+            <p class="resultado-texto-nomensaje">
+              Ningún mensaje fue encontrado
+            </p>
+            <p class="resultado-texto-ingresetext">
+              Ingresa el texto que desees encriptar o desencriptar.
+            </p>
+          </div>
+          <div><button class="btn resultado-btncopiar">Copiar</button></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <ul class="footer-iconos">
+        <li>
+          <a href="https://github.com/elmermendc" target="_blank"><img src="images/github.png" /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/elmermendozac/" target="_blank"><img src="images/linkedin.png" /></a>
+        </li>
+      </ul>
+
+      <p>Desarrollado por Elmer</p>
+    </footer>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
